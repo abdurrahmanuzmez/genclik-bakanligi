@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1028689707835",
+    "firebase_url": "https://bakanlik-hackathon.firebaseio.com",
+    "project_id": "bakanlik-hackathon",
+    "storage_bucket": "bakanlik-hackathon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028689707835:android:4964d7aad7227a13aeed1e",
+        "android_client_info": {
+          "package_name": "tr.gov.gsb.bakanlik.hackathon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1028689707835-i8idtvlicsnhldnifa1v5257sp7nsef9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBOhXWCxajtwJRUm3xa3qXR6Zw12NsatM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1028689707835-i8idtvlicsnhldnifa1v5257sp7nsef9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

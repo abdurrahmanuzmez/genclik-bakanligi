@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".authorizedActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <EditText
+        android:id="@+id/shopUserNameText"
+        android:layout_width="303dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="19dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:hint="Hesap Adı"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/postCommentCode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/postCommentCode"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="23dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginStart="39dp"
+        android:ems="10"
+        android:hint="Doğrulama Kodu"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/postImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shopUserNameText" />
+
+    <ImageView
+        android:id="@+id/postImageView"
+        android:layout_width="0dp"
+        android:layout_height="240dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginStart="42dp"
+        android:onClick="selectImage"
+        app:layout_constraintBottom_toTopOf="@+id/upload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postCommentCode"
+        app:srcCompat="@drawable/select" />
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="97dp"
+        android:layout_marginEnd="4dp"
+        android:onClick="upload"
+        android:text="Kayıt Ol"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/postImageView"
+        app:layout_constraintTop_toBottomOf="@+id/postImageView" />
+
+</android.support.constraint.ConstraintLayout>

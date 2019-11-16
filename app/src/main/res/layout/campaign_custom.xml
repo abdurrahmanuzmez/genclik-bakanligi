@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="324dp"
+    android:layout_height="130dp"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="326dp"
+        android:layout_height="104dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="0dp"
+        app:srcCompat="@drawable/arkaplan" />
+
+    <ImageView
+        android:id="@+id/imageViewCustomView"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_alignEnd="@+id/imageView3"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="13dp"/>
+
+    <TextView
+        android:id="@+id/commentCodeTextViewCustomView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_marginStart="195dp"
+        android:layout_marginBottom="6dp"
+        android:text="konu"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/commentTextViewCustomView"
+        android:layout_width="67dp"
+        android:layout_height="88dp"
+        android:layout_alignEnd="@+id/imageView3"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_marginEnd="231dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/"
+        android:text="aciklama "
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_alignEnd="@+id/imageView3"
+        android:layout_marginStart="218dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="25dp"
+        android:text="2474 Gönüllü"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/nope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView3"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_marginEnd="0dp"
+        android:text=""
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/userPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/commentCodeTextViewCustomView"
+        android:layout_alignStart="@+id/imageView4"
+        android:text="sehir"
+        android:textSize="8sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="33dp"
+        android:layout_height="34dp"
+        android:layout_alignEnd="@+id/imageView3"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="3dp"
+        app:srcCompat="@drawable/star" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="9dp"
+        android:layout_height="8dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="42dp"
+        app:srcCompat="@drawable/bb" />
+
+</RelativeLayout>

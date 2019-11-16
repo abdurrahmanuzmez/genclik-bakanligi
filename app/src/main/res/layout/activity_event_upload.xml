@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EventUploadActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <EditText
+        android:id="@+id/shopUserNameText"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="Etkinliğin Yapılacağı Yer"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintEnd_toEndOf="@+id/editText2"
+        app:layout_constraintStart_toStartOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/shopUserNameText2"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/shopUserNameText2"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="17dp"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="Etkinlik Açıklama"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/shopUserNameText"
+        app:layout_constraintEnd_toEndOf="@+id/shopUserNameText"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/shopUserNameText"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="63dp"
+        android:layout_marginEnd="50dp"
+        android:onClick="upload"
+        android:text="Upload"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="85dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginStart="41dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/upload"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2">
+        android:layout_width="314dp"
+        android:layout_height="127dp"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="298dp"
+
+        <RadioButton
+            android:id="@+id/radio_one"
+            android:checked="true"
+            android:onClick="checkButton"
+            android:text="Spor" />
+
+        <RadioButton
+            android:id="@+id/radio_two"
+            android:onClick="checkButton"
+            android:text="Sağlık ve Sosyal Hizmetler" />
+
+        <RadioButton
+            android:id="@+id/radio_three"
+            android:onClick="checkButton"
+            android:text="Kültür ve Turizim" />
+
+        <RadioButton
+            android:id="@+id/radio_four"
+            android:onClick="checkButton"
+            android:text="Eğitim" />
+
+        <RadioButton
+            android:id="@+id/radio_five"
+            android:onClick="checkButton"
+            android:text="Çevre" />
+
+        <RadioButton
+            android:id="@+id/radio_six"
+            android:onClick="checkButton"
+            android:text="Afet ve Acil Durum" />
+
+
+    </RadioGroup>
+
+    <RadioButton
+        android:id="@+id/radio_six"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="checkButton"
+        android:text="Spor"
+
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="41dp"
+        android:ems="10"
+        android:hint="Gönüllü Sayısı"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shopUserNameText" />
+
+
+</android.support.constraint.ConstraintLayout>

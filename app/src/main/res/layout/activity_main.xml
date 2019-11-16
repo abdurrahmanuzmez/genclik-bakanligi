@@ -1,0 +1,110 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="360dp"
+    android:layout_height="620dp"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignStart="@+id/imageView6"
+        android:layout_alignTop="@+id/progressBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hamburger"
+        />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignEnd="@+id/imageView8"
+        android:layout_alignTop="@+id/progressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/telefon"
+        android:onClick="startMessageAct"
+        />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="109dp"
+        android:layout_height="74dp"
+        android:layout_alignTop="@+id/imageView7"
+        android:layout_toStartOf="@+id/imageView7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/etkinlik"
+        />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="109dp"
+        android:layout_height="74dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:srcCompat="@drawable/favori"
+        android:onClick="startFavoriteAct"
+        />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="109dp"
+        android:layout_height="74dp"
+        android:layout_alignTop="@+id/imageView6"
+        android:layout_toEndOf="@+id/imageView7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:srcCompat="@drawable/ligler"
+        android:onClick="startLeaguesAct"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:minHeight="50dp"
+        android:minWidth="200dp"
+        android:progress="1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/progressBar"
+        android:layout_below="@+id/progressBar"/>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="355dp"
+        android:layout_height="401dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="76dp"
+        android:layout_height="66dp"
+        android:layout_alignBottom="@+id/imageView4"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="0dp"
+        android:background="#00FFFFFF"
+        android:onClick="startLeftActivity"
+        android:visibility="visible" />
+
+</RelativeLayout>
